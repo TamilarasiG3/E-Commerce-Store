@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG Store 🛒</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h2>AG Store</h2>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <button class="navbar-menu-toggle" onclick="openSidebar()">☰</button>
+</nav>
+
+<!-- Side Navbar -->
+<div class="side-navbar" id="sideNavbar">
+    <button class="close-btn" onclick="closeSidebar()">✖</button>
+    <div class="side-navbar-links">
+        <a href="#home" onclick="closeSidebar()">Home</a>
+        <a href="#products" onclick="closeSidebar()">Products</a>
+        <a href="#about" onclick="closeSidebar()">About</a>
+        <a href="#contact" onclick="closeSidebar()">Contact</a>
+    </div>
+</div>
+
+<!-- Home -->
+<section id="home" class="hero">
+    <h1>Welcome to AG Store</h1>
+    <p>Best products at the best price</p>
+</section>
+
+<!-- Products -->
+<section id="products" class="products">
+    <h2>Our Products</h2>
+
+    <div class="product-grid">
+        <div class="product-card">
+            <h3>T-Shirt</h3>
+            <p>₹499</p>
+            <button onclick="addToCart('T-Shirt')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Shoes</h3>
+            <p>₹1999</p>
+            <button onclick="addToCart('Shoes')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Watch</h3>
+            <p>₹2999</p>
+            <button onclick="addToCart('Watch')">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>AG Store is a demo e-commerce website built for learning purposes.</p>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: agstore@gmail.com</p>
+</section>
+
+<!-- Cart -->
+<div class="cart">
+    🛒 Cart Items: <span id="cartCount">0</span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
