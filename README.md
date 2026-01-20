@@ -1,5 +1,5 @@
 
-#🛒 AG Store – Frontend E-commerce Website
+# 🛒 AG Store – Frontend E-commerce Website
 
 AG Store is a frontend-only e-commerce website built using HTML, CSS, and JavaScript.
 This project focuses on UI design, responsiveness, and basic client-side interactivity.
@@ -94,3 +94,4 @@ This project is licensed under the MIT License.
 
 Tamilarasi G
 Frontend Web Developer 💻
+
